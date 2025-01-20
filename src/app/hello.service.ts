@@ -12,7 +12,7 @@ export class HelloService {
 
   getTranslation(language:string):Observable<any>
   {
-    return this.http.get("http://127.0.0.1:8000/translate/?target_lang="+language)
+    return this.http.get("https://worldbackend-hzcgbsatbyebdtaf.canadacentral-01.azurewebsites.net/translate/?target_lang="+language)
   }
 
 }
