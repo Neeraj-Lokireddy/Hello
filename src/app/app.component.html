@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-6 offset-md-3">
+      <div class="card flex justify-content-center">
+        <p-card class="text-center" header={{title}}!>
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage" optionLabel="language" optionValue="language_code"
+                placeholder="Select a City" (ngModelChange)="getData()"/>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>
